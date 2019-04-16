@@ -15,8 +15,8 @@ public struct BulkItemResponse: Decodable {
     public let version: Int
     public let result: ResultType
     public let status: Int
-    public let seqNo: Int
-    public let primaryTerm: Int
+    public let seqNo: Int?
+    public let primaryTerm: Int?
     
     public struct Shards: Codable {
         public let total: Int
